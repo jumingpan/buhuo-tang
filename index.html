@@ -43,7 +43,7 @@
   .section-label{font-size:0.7rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem}
   .section-title{font-family:var(--serif);font-size:clamp(1.6rem,3vw,2.4rem);font-weight:400;color:var(--text);margin-bottom:1rem}
   .section-desc{color:var(--muted);max-width:520px;margin:0 auto;font-size:0.95rem}
-  .gallery-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:2.5rem;max-width:960px;margin:0 auto}
+  .gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;max-width:1100px;margin:0 auto}
   .item-card{background:var(--card);border:1px solid var(--border);overflow:hidden;transition:border-color .3s,transform .2s}
   .item-card:hover{border-color:var(--gold-light);transform:translateY(-2px)}
   .item-img-wrap{width:100%;aspect-ratio:4/3;overflow:hidden;background:var(--dark2);display:flex;align-items:center;justify-content:center;position:relative}
@@ -131,14 +131,29 @@
       <div class="section-label">Collection</div>
       <h2 class="section-title">Featured Pieces</h2>
       <p class="section-desc">Each object is carefully sourced and authenticated, representing the finest traditions of Chinese art and craftsmanship.</p>
+      <!-- PIECE 3: Sotheby's Yaozhou Duck Bowl -->
+      <div class="item-card">
+        <div class="item-img-wrap">
+          <img src="bowl2.JPG" alt="Rare Yaozhou Celadon Duck Lobed Bowl"/>
+        </div>
+        <div class="item-body">
+          <div class="item-period">Northern Song / Jin Dynasty</div>
+          <div class="item-title">Rare Yaozhou Celadon 'Duck' Lobed Bowl</div>
+          <div class="item-desc">Delicately potted, depicting a pair of ducks swimming between lotus leaves amongst a wave ground under an olive-green glaze. Diameter 5 in. (12.8 cm). Provenance: Collection of H.R.N. Norton (d.1961/62); Sotheby's London, 26 March 1963, lot 40; Collection of Sture and Valborg Nydell. Exhibited: <em>Chinese Ceramics Tang to Song</em>, Marchant, London, 2022, cat. no. 33.</div>
+          <div class="item-footer">
+            <div class="item-price">Est. $15,000–25,000</div>
+            <button class="inquire-btn" onclick="openModal('Rare Yaozhou Celadon Duck Lobed Bowl')">Inquire</button>
+          </div>
+        </div>
+      </div>
+
     </div>
     <div class="gallery-grid">
 
       <!-- PIECE 1: Sotheby's Yaozhou Bowl -->
       <div class="item-card">
         <div class="item-img-wrap">
-          <div class="loading-overlay" id="loader1">Loading…</div>
-          <img id="img1" alt="Carved Yaozhou Celadon Peony Bowl" style="display:none"/>
+          <img src="bowl.JPG" alt="Carved Yaozhou Celadon Peony Bowl"/>
         </div>
         <div class="item-body">
           <div class="item-period">Northern Song Dynasty</div>
@@ -154,16 +169,15 @@
       <!-- PIECE 2: Christie's Tiger Pillow -->
       <div class="item-card">
         <div class="item-img-wrap">
-          <div class="loading-overlay" id="loader2">Loading…</div>
-          <img id="img2" alt="Cizhou Painted Tiger-Form Pillow" style="display:none"/>
+          <img src="tiger.JPG" alt="Cizhou Painted Tiger-Form Pillow"/>
         </div>
         <div class="item-body">
           <div class="item-period">Song / Jin Dynasty</div>
           <div class="item-title">Cizhou Painted Tiger-Form Pillow</div>
           <div class="item-desc">Boldly painted in russet and black with tiger-stripe and spot markings. Shaped as a recumbent tiger with lobed top panel painted with reeds and rocks. A masterwork of Cizhou ware.</div>
           <div class="item-footer">
-            <div class="item-price">POA</div>
-            <a href="https://www.christies.com/en/lot/lot-6575715" target="_blank" class="inquire-btn">View on Christie's ↗</a>
+            <div class="item-price">Est. $15,000–25,000</div>
+            <button class="inquire-btn" onclick="openModal('Cizhou Painted Tiger-Form Pillow')">Inquire</button>
           </div>
         </div>
       </div>
